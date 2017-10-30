@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Patterns are Good</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			 <section data-transition="zoom" data-markdown data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+			  <script type="text/template">
+
+
+<!-- .slide: data-background-image="images/blue_richmondva.png" -->
+### Design Patterns
+---
+Brought to you by Wray Mills and Jack Hughes
+
+Powered By [CapTech Consulting](https://www.captechconsulting.com)
+
+<br /><br /><br /><br /><br /><br />
+<img height="40px" style="border:none" src="images/captech_logo.png" />
+
+			  
+---
+
+
+<!-- .slide: data-background-image="images/mills-family.jpg" -->
+### About Wray
+#### Old, but with young kids
+---
+* A wife and 3 girls (8,11,13)
+* In IT over 20 years!
+* Director at CapTech Consulting
+* Also focused on teaching (Tech Em Studios)
+ * My wife and kids all have published Alexa skills
+
+<aside class="notes">
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+</aside>
+
+
+---
+
+
+<!-- .slide: data-background-image="images/hughes-family.jpg" -->
+### About Jack
+#### Consultant for over 3 years, hired through VCU!
+---
+* Transfered from Virginia Tech to VCU
+* Works primarily in Android and Java
+* Looks like a lumberjack - might be a lumberjack
+* Consultant for CapTech Consulting
+
+<aside class="notes">
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+</aside>
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### What are Design Patterns
+Software Design patterns, long story short, are lessons learned on how to write good, clean, maintainable code.
+
+They are the common and accepted ways that we write code in a way that communicates our intent and goals for the outcome of our code.
+
+<aside class="notes">
+		Notes
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Types of Design Patterns:
+* Creational
+* Structural
+* Behavioral
+
+<aside class="notes">
+<p><h4>Creational Patterns</h4> These design patterns provide ways to create objects while hiding the creation logic, instead of instantiating objects directly using the new operator. This gives the program more flexibility in deciding which objects need to be created for a given use case.</p>
+<p><h4>Structural Patterns</h4> These design patterns deal with class and object composition. The concept of inheritance is used to compose interfaces and define ways to compose objects to obtain new functionality.</p>
+<p><h4>Behavioral Patterns</h4> These design patterns are specifically concerned with communication between objects.</p>
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Things I wish I had known in college (Jack)
+* I did not know what good code looked like.
+* I did not know what coding architecture meant or looked like
+* I knew theories, but had no experience
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+<blockquote>
+&ldquo;
+There are two parts to learning craftsmanship: knowledge and work. You must gain the knowledge of principles, patterns, practices, and heuristics that a craftsman knows, and you must also grind that knowledge into your fingers, eyes, and gut by working hard and
+practicing.
+&rdquo;
+<blockquote>
+- Robert C Martin
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+
+### What Helped
+* Robert C. Martin - "Clean Code"
+* Reading bad code
+* Reading good code
+* Reading my own code and realizing it was bad
+* The Five stages of Grief -> Accepting my code was bad
+* Making my bad code better
+
+<aside class="notes">
+		The five stages, Denial, Anger, Bargaining, Depression and Acceptance.
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Why Write Good Code?
+* We spend more time reading code than writing code
+* We WILL forget what we were doing
+* We will most likely change it later
+* Someone else might read it
+* Someone else might change it
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+<blockquote>
+&ldquo;
+Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.
+&rdquo;
+<blockquote>
+- Robert C Martin
+
+
+--
+
+
+<blockquote>
+&ldquo;
+There are two parts to learning craftsmanship: knowledge and work. You must gain the knowledge of principles, patterns, practices, and heuristics that a craftsman knows, and you must also grind that knowledge into your fingers, eyes, and gut by working hard and practicing.
+&rdquo;
+<blockquote>
+- Robert C Martin
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### What is Good Code?
+Uncle Bob here.
+
+Clean Code: A Handbook of Agile Software Craftsmanship 
+by Robert C. Martin 
+Link: <a href="http://a.co/9wEHPUv">http://a.co/9wEHPUv</a>
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+<blockquote>
+&ldquo;
+Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.
+&rdquo;
+- Grady Booch author of "Object Oriented Analysis and Design with Applications"
+<blockquote>
+
+
+--
+
+
+<blockquote>
+&ldquo;
+Clean code always looks like it was written by someone who cares.
+&rdquo;
+<blockquote>
+- Robert C Martin
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Back to Design Patterns
+
+How do Design Patterns solve these problems?
+
+<aside class="notes">
+		Notes
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Creational Design Patterns
+
+Creational Design Patterns are ways we write code to create objects, all while removing the need to know how the object is created.
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+* Factory Method
+* Singleton
+* Abstract Factory
+* Prototype
+* Builder
+
+<aside class="notes">
+<p><h4>Factory Method</h4>       When a client object does not know which class to instantiate, it can make use of the factory method to create an instance of an appropriate class from a class hierarchy or a family of related classes. The factory method may be designed as part of the client itself or in a separate class. The class that contains the factory method or any of its subclasses decides on which class to select and how to instantiate it.</p>
+<p><h4>Singleton</h4>            Provides a controlled object creation mechanism to ensure that only one instance of a given class exists.</p>
+<p><h4>Abstract Factory</h4>     Allows the creation of an instance of a class from a suite of related classes without having a client object to specify the actual concrete class to be instantiated.</p>
+<p><h4>Prototype</h4>            Provides a simpler way of creating an object by cloning it from an existing (prototype) object.</p>
+<p><h4>Builder</h4>              Allows the creation of a complex object by providing the information on only its type and content, keeping the details of the object creation transparent to the client. This allows the same construction process to produce different representations of the object.</p>
+</aside>
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Structural Design Patterns
+
+Structural Design Patterns are the ways we make up object and architecture composition, in order to gain functionality or cleaner code.
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+* Adapter
+* Bridge
+* Composite
+* Decorator 
+* Facade
+* Flyweight
+* Proxy
+
+
+<aside class="notes">
+<p><h4>Adapter</h4>         Adapts one interface for a class into one that a client expects</p>
+<p><h4>Bridge</h4>          Decouple an abstraction from its implementation so that the two can vary independently</p>
+<p><h4>Composite</h4>       A tree structure of objects where every object has the same interface</p>
+<p><h4>Decorator</h4>       Add additional functionality to a class at runtime where subclassing would result in an exponential rise of new classes</p>
+<p><h4>Facade</h4>          Create a simplified interface of an existing interface to ease usage for common tasks</p>
+<p><h4>Flyweight</h4>       A high quantity of objects share a common properties object to save space</p>
+<p><h4>Proxy</h4>           A class functioning as an interface to another thing</p>
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Behavioral Design Patterns
+
+Behavioral Design Patterns are ways how our code interacts with other code and how it performs.
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+* Chain of responsibility pattern
+* Command pattern
+* Iterator pattern
+* Null Object pattern
+* Observer pattern
+* Weak reference pattern
+* Protocol stack
+* Scheduled-task pattern
+* Specification pattern
+* State pattern
+* Template method pattern
+
+<aside class="notes">
+<p><h4>Chain of responsibility pattern</h4>         Command objects are handled or passed on to other objects by logic-containing processing objects</p>
+<p><h4>Command pattern</h4>                         Command objects encapsulate an action and its parameters</p>
+<p><h4>Iterator pattern</h4>                        Iterators are used to access the elements of an aggregate object sequentially without exposing its underlying representation</p>
+<p><h4>Null Object pattern</h4>                     designed to act as a default value of an object</p>
+<p><h4>Observer pattern</h4>                        aka Publish/Subscribe or Event Listener. Objects register to observe an event that may be raised by another object</p>
+<p><h4>Weak reference pattern</h4>                  De-couple an observer from an observable.</p>
+<p><h4>Protocol stack</h4>                          Communications are handled by multiple layers, which form an encapsulation hierarchy.</p>
+<p><h4>Scheduled-task pattern</h4>                  A task is scheduled to be performed at a particular interval or clock time (used in real-time computing)</p>
+<p><h4>Specification pattern</h4>                   Recombinable Business logic in a boolean fashion</p>
+<p><h4>State pattern</h4>                           A clean way for an object to partially change its type at runtime</p>
+<p><h4>Template method pattern</h4>                 Describes the program skeleton of a program</p>
+</aside>
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Real. World. Examples.
+* Enterprise vs In-the-trash (AKA Garbage)
+* Frameworks
+* Architecture
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+### Enterprise Code
+* Security
+* Scalability
+* Reliability
+* Flexibility
+
+
+<aside class="notes">
+<p><h4>Security</h4>Enterprise code needs to be upheld to the highest standards, especially when dealing with company and customer data. Equifax ring any bells? Target?</p>
+<p><h4>Scalability</h4>If your code can't (easily) grow with the business to handle the scale of data, capabilites, and concurrent connections then you're not enterprise.</p>
+<p><h4>Reliability</h4>If you can't supply the 99.9999% that really critical business systems require, then you're not enterprise.</p>
+<p><h4>Flexibility</h4>If a business needs to change in order to adapt to a piece of software's way of doing things (rather than vice versa), the software isn't going to sell in an enterprise environment.</p>
+</aside>
+
+
+--
+
+
+### Spaghetti Code
+* Fragile (cannot bend or change without breaking)
+* Not Tested
+* Hard to read
+* Hard to follow
+* Does not handle "Non-Happy Path"
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+### Frameworks
+* Many design patterns are already in use in frameworks and helper libraries you may already be using!
+	* Gson (Google's JSON library) (uses Builder pattern)
+	* OkHttp (Uses Builder pattern)
+	* RxJava (Uses Observer pattern)
+	* Log4j (Uses Factory pattern)
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+### Design Patterns Built Into the Languange
+* Abstract factory
+	* javax.xml.parsers.DocumentBuilderFactory
+* Builder
+	* java.lang.StringBuilder
+* Factory Method
+	* java.util.Calendar#getInstance()
+* Prototype
+	* java.lang.Object#clone()
+* Adapter
+	* java.util.Arrays#asList()
+* Command
+	* java.lang.Runnable
+* Interpreter
+	* java.util.Pattern
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+--
+
+
+### Architecture
+* Just Like Data Structures, Use Design Patterns where they make sense.
+* Design Patterns give code architects a common language to describe and build software.
+* Design patterns apply to more than just classes - they can apply to higher level abstractions within the software.
+
+<aside class="notes">
+
+</aside>
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### What Do Good Design Patterns Give Us?
+* Cleaner Code
+* Structure that is easier to understand
+* Ease of alteration (Code can change)
+* Easier Testing
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+---
+
+
+<!-- .slide: data-background="#2d2d2d" -->
+### Speaking of Testing...
+* Design patterns help us write better code
+* Better code can be more easily tested
+* More tests means we can change code easier
+
+<aside class="notes">
+		Notes
+</aside>
+
+
+---
+
+
+</script>
+			  </section>
+			  
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Display the page number of the current slide
+				slideNumber: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

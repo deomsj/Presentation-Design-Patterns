@@ -1,2 +1,6 @@
-# Presentation-Design-Patterns
-Presentation (reveal.js), supporting resources, and examples on Coding Design Patterns.
+# Design Patterns
+
+## Presentation
+
+See the reveal.js presentation here: [https://captechconsulting.github.io/Presentation-Design-Patterns/](https://captechconsulting.github.io/Presentation-Design-Patterns/)
+
